@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Sladoled</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+</head>
+
+<body>
+	<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                   		 <li><a href="index.html">Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                      	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                    <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+ <div id="blog">    
+   <div class="wrapper">
+     <div id="main">
+        	
+         <div class="block" id="news">
+        
+        	
+            
+            <div class="article">
+            	<h1>Neobični ukusi sladoleda - Kulinarski putopis</h1>
+                <img src="images/slad.jpg" alt="sladoled">
+                <p>Čokolada, vanila, jagoda neki su od uobičajenih i verovatno najomiljenijih ukusa ledenih poslastica. Međutim, u nekim zemljama u ponudi su i krajnje neobični ukusi sladoleda, piše Daily Meal.</p>
+
+<p>Kavijar. Luksuzna namirnica sada je našla svoj put i do ledenih poslastica. Sladoled koji sadrži do 60 procenata kavijara može se naći u restoranu Filip For u Francuskoj. Međutim, ovaj restoran nudi posebnu uslugu - dostavu ovog luksuznog sladoleda koji se pakuje u specijalnu ambalažu i može ostati zaleđen do 72 sata.</p>
+<p>Senf. Iako je često u senci kečapa i majoneza, senf je konačno dobio svojih pet minuta, bar kada su poslastice u pitanju. Naime, u Britanij se može naći sladoled sa neobičnom kombinacijom ukusa šećera i senfa.</p>
+
+<p> Špagete i sir - U poslastičarnici HEladeria Coromoto u Venecueli, pored više od 1,00 različitih ukusa sladoleda, mogu se naći i ledene  poslastice s ukusom špageta i sira, tunjevine i dijetalnog napitka.</p>
+
+<p>Salata.U Japanu se možete osvežiti sladoledom koji u osnovi ima ukus jagode, a obogaćem je aromom zelene salate, krastavca, paradajza i paprike.</p>
+<p>Humano mleko. Poslastičari su ranije eksperimentisali sa raznim ukusima uključujući i sladoled s ukusom kozjeg mleka, ali u jednoj poslastičarnici u Londonu možete probati i sladoled s ukusom mleka majki donora. Bejbi Gaga, kako je sladoled nazvan, napravljen je od mleka žena koje su donirale svoje mleko i obogaćen je ukusima vanile i limuna.</p>
+<p> Bakalar. U Portoriku se možete osvežiti sladoledom s ukusom usoljenog bakalara. </p>
+            </div><!-- end .article -->
+            
+            
+             
+        </div>
+    
+   	</div><!-- end #main -->
+
+	<div id="sidebar">
+    
+        <div class="block">
+        	<h2>Tekstovi</h2>
+            <p><a href="ledenaPoslastica.html">Neodoljivo ledeno zadovoljstvo</a></p>
+            <p><a href="kulinarskiPutopis.html">Neobični ukusi sladoleda - Kulinarski putopis</a></p>
+            <p><a href="newYork.html">Neobičan sladoled - hit u Njujorku</a></p>
+        </div>
+        
+        
+        
+        
+        
+    
+   	</div><!-- end #sidebar -->
+    </div><!--wrapper-->
+    </div><!--blog-->
+     
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>

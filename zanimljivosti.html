@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sladoled</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><!-- ucitan CDN JQuery(zato nije radio hamburger meni! -->
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+
+
+</head>
+
+<body>
+<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                    	<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                    	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                     
+                     <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-lg fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+
+ <div id="blog">    
+   <div class="wrapper">
+     <div id="main">
+        	
+         <div class="block" id="news">
+         <h1>Zanimljive činjenice o sladoledu</h1>
+                  
+            <div class="article">
+            	<h2>Neodoljivo ledeno zadovoljstvo</h2>
+                <img src="images/sladoledD.jpg" alt="Sladoled">
+                <p>Gotovo da nema osobe koja tokom toplih dana ne uživa u sladoledu. On je ukusan, sladak, neodoljiv, prosto savršen. Preliven, na štapiću, u kornetu... sladoled može da popravi raspoloženje za samo nekoliko trenutaka.</p>
+                <p>Istraživanja pokazuju da samo jedna kugla izaziva lučenje hormona sreće, što je dovoljno da se odmah osećamo bolje. Istorija sladoleda duga je koliko i istorija čovečanstva, a ova omiljena poslastica doživela je potpunu evoluciju od trenutka kada je nastala.</p>
+
+<p>Nekada je bila luksuz, danas navika, nekada jednostavna mešavina leda i šećera, dok se danas služi u najneverovatnijim kombinacijama i ukusima. Ono što se kod sladoleda nikada nije promenilo jeste činjenica da je jedna od najukusnijih i najpopularnijih poslastica na svetu.
+                
+                 <a href="ledenaPoslastica.html">Pročitaj&nbsp;više...</a></p>
+            </div><!-- end .article -->
+            
+            <div class="article">
+            	<h2>Neobični ukusi sladoleda - Kulinarski putopis</h2>
+                <img src="images/slad.jpg" alt="sladoled">
+                <p>Čokolada, vanila, jagoda neki su od uobičajenih i verovatno najomiljenijih ukusa ledenih poslastica. Međutim, u nekim zemljama u ponudi su i krajnje neobični ukusi sladoleda, piše Daily Meal.</p>
+
+<p>Kavijar. Luksuzna namirnica sada je našla svoj put i do ledenih poslastica. Sladoled koji sadrži do 60 procenata kavijara može se naći u restoranu Filip For u Francuskoj. Međutim, ovaj restoran nudi posebnu uslugu - dostavu ovog luksuznog sladoleda koji se pakuje u specijalnu ambalažu i može ostati zaleđen do 72 sata.</p>
+<p>Senf. Iako je često u senci kečapa i majoneza, senf je konačno dobio svojih pet minuta, bar kada su poslastice u pitanju. Naime, u Britanij se može naći sladoled sa neobičnom kombinacijom ukusa šećera i senfa. <a href="kulinarskiPutopis.html">Pročitaj&nbsp;više...</a></p>
+            </div><!-- end .article -->
+            
+            
+             <div class="article">
+            	<h2>Neobičan sladoled - hit u Njujorku </h2>
+                <img src="images/crnisl.png" alt="Crni sladoled">
+                <p>Sa porastom temperature, u Njujork je stigao i mat crni sladoled. </p>
+<p>Na tržište, kojim dominiraju šareni slatkiši jarkih boja, stiže ‘zift crni’ sladoled.</p>
+<p>Proizvodi ga poslastičarnica Morgenstern’s Finest Ice Cream, a suprotno mišljenju ljudi koji ga još nisu probali – nema ukus uglja, na koji neodoljivo podseća. <a href="newYork.html">Pročitaj&nbsp;više...</a></p>
+            </div><!-- end .article -->
+        </div>
+    
+   	</div><!-- end #main -->
+
+	<div id="sidebar">
+    
+        <div class="block">
+        	<h2>Tekstovi</h2>
+            <p><a href="ledenaPoslastica.html">Neodoljivo ledeno zadovoljstvo</a></p>
+            <p><a href="kulinarskiPutopis.html">Neobični ukusi sladoleda - Kulinarski putopis</a></p>
+            <p><a href="newYork.html">Neobičan sladoled - hit u Njujorku</a></p>
+        </div>
+        
+        
+    
+   	</div><!-- end #sidebar -->
+    </div><!--wrapper-->
+    </div><!--blog-->
+    
+ 
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>

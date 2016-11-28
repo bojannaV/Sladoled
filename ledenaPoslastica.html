@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Sladoled</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+</head>
+
+<body>
+	<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                   		 <li><a href="index.html">Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                      	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                    <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+ <div id="blog">    
+   <div class="wrapper">
+     <div id="main">
+        	
+         <div class="block" id="news">
+           
+             <div class="article">
+            	<h1>Neodoljivo ledeno zadovoljstvo</h1>
+                <img src="images/sladoledD.jpg" alt="Sladoled">
+                <p>Gotovo da nema osobe koja tokom toplih dana ne uživa u sladoledu. On je ukusan, sladak, neodoljiv, prosto savršen. Preliven, na štapiću, u kornetu... sladoled može da popravi raspoloženje za samo nekoliko trenutaka.</p>
+                <p>Istraživanja pokazuju da samo jedna kugla izaziva lučenje hormona sreće, što je dovoljno da se odmah osećamo bolje. Istorija sladoleda duga je koliko i istorija čovečanstva, a ova omiljena poslastica doživela je potpunu evoluciju od trenutka kada je nastala.</p>
+
+<p>Nekada je bila luksuz, danas navika, nekada jednostavna mešavina leda i šećera, dok se danas služi u najneverovatnijim kombinacijama i ukusima. Ono što se kod sladoleda nikada nije promenilo jeste činjenica da je jedna od najukusnijih i najpopularnijih poslastica na svetu.</p>
+            <h2>ZANIMLJIVOSTI</h2>
+
+<p> Najpopularniji ukus sladoleda na svetu je vanila, a nutricionisti tvrde da samo jedna kugla može da ima do 275 kalorija</p>
+
+<p> 80 odsto svog sladoleda na svetu pravi se od vanile sa Madagaskara, a osim Amerike najviše ga jedu na Novom Zelandu i
+
+u Danskoj</p>
+
+<p> Najviše sladoleda pojedu deca do 12 godina i stariji od 45 godina </p>
+
+
+<p> Da bi se pojeo sladoled na štapiću potrebno je polizati ga najmanje 50 puta</p>
+<p> Najveća porcija na svetu napravljena je 1985. godine. Bila je visoka 4 metra i prelivena sa 145 litara topinga od čokolade</p>
+
+<p> Statistički podaci pokazuju da se najviše sladoleda proda nedeljom</p>
+
+<p> Klinička ispitivanja dokazala su da samo jedna kašičica sladoleda donosi trenutni osećaj zadovoljstva i sreće</p>
+
+<p> Gastronomski stručnjaci tvrde da sladoled najidealnije "ide" uz šampanjac ili zeleni čaj</p>
+
+<p> U Velikoj Britaniji postoji poslastičarnica u kojoj se služi sladoled od majčinog mleka</p>
+
+<p> U Italiji postoji Univerzitet koji obučava majstore za pravljenje sladoleda</p>
+
+<p> Sladoled za desert češće biraju muškarci nego žene, pokazuju statistike, a čak svaki peti konzument svoju poslasticu podeli sa kućnim ljubimcem, najčešće sa psom ili mačkom</p>
+
+<p> Najskuplji sladoled na svetu košta 1000 dolara. Napravljen je od listića 23-karatnog zlata, kavijara i drugih skupocenih sastojaka</p>
+            
+            
+            </div><!-- end .article -->
+            
+            
+        </div>
+    
+   	</div><!-- end #main -->
+
+	<div id="sidebar">
+    
+        <div class="block">
+        	<h2>Tekstovi</h2>
+            <p><a href="ledenaPoslastica.html">Neodoljivo ledeno zadovoljstvo</a></p>
+            <p><a href="kulinarskiPutopis.html">Neobični ukusi sladoleda - Kulinarski putopis</a></p>
+            <p><a href="newYork.html">Neobičan sladoled - hit u Njujorku</a></p>
+        </div>
+        
+        
+        
+    
+   	</div><!-- end #sidebar -->
+    </div><!--wrapper-->
+    </div><!--blog-->
+     
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>

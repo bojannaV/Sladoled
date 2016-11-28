@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sladoled</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><!-- ucitan CDN JQuery(zato nije radio hamburger meni! -->
+
+<link rel="stylesheet" href="lib/cntl.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+
+
+</head>
+
+<body>
+<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                    	<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                    	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                     
+                     <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-lg fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+
+ 
+      <article id="hero">
+    	<div class="wrapper">
+        
+        <div id="slogan">
+        	<h2> "Sladoled je toliko sjajan da je šteta što nije ilegalan."<br>
+Voltaire</h2>
+           </div> 
+        
+        </div>    
+    </article>
+    
+      <article id="history">
+    	<div class="wrapper">
+        
+        	<div class="istorija">
+                <h2>Ledena poslastica kroz istoriju</h2>
+                <img src="images/brodProvidan.png" alt="istorija" id="velikaR">
+                <img src="images/saBrodom.png" alt="istorija" id="malaR">
+                <img src="images/brodic.png" alt="brod" id="brod">
+               	<img src="images/moree.png" alt="more" id="more">
+                <p><a href="istorija.html" class="button" id="procitaj">Pročitaj više &raquo;</a></p>
+       		</div>
+       
+        </div><!--end .wrapper-->   
+    </article><!--end #history-->  
+    
+    <article id="about">
+    	<div class="wrapper">
+                        
+                <img src="images/child-img.png" alt="Devojcica" id="devojcica">
+                <div id="zanimljivosti">
+               	 	<h2>Da li ste znali? </h2>
+               	 	<p>Da je nedelja dan kada se pojede najviše sladoleda</p>
+                	<p>Da profesionalni degustatori sladoled probaju specijalnom zlatnom kašičicom</p>
+                	<p>Da svaki peti čovek podeli sladoled sa svojim kućnim ljubimcem</p>
+                	<p>Da prema tvrdnjama NASA astronauti su u svemiru najviše žalili za sladoledom</p>
+                	<p><a href="zanimljivosti.html" class="button" id="jos">Pročitaj više &raquo;</a></p>
+                </div><!--end #zanimljivosti-->
+                
+        </div><!--end .wrapper-->   
+    </article><!--end #about-->    
+    
+    
+      <section id="products">
+    	<div class="wrapper">
+        	
+            <header>
+            	<h2>Najpopularniji ukusi</h2>
+                <p>Sladoled je italijanski proizvod, koji Italijani već decenijama spremaju po tradicionalnoj recepturi. Moderno doba je malo promenilo scenu sladoleda, pojavljuju se novi ukusi koji idu do ekstremno neobičnih ukusa poput kajmaka, slanine, kiselih krastavaca. Eksperimentisanja idu i dalje od ukusa, pa najskuplji sladoled na svetu košta 1000$ i napravljen je od listića 23-karatnog zlata. Ali i dalje su najpopularniji ukusi vanila, čokolada, jagoda.  </p>
+            </header>
+               
+            <article class="product">
+            <img src="images/vanila.png" alt="vanila"> 
+            
+            <div class="products-text">
+        	<h3>Vanila</h3> 
+            </div>
+                      	
+            </article>
+        
+            <article class="product">
+            <img src="images/cokolada.png" alt="cokolada">
+            
+            <div class="products-text">
+        	<h3>Čokolada</h3> 
+            </div>
+            </article>
+           
+            <article class="product">
+            <img src="images/badem.png" alt="badem">
+            
+            <div class="products-text">
+        	<h3>Badem</h3> 
+            </div>
+             </article>
+             
+            <article class="product">
+            <img src="images/jagoda.png" alt="jagoda">
+            
+            <div class="products-text">
+        	<h3>Jagoda</h3> 
+            </div>
+            </article>
+        </div>   
+       
+    </section><!-- end #produsts-->
+
+        
+    <section id="mapa">
+    	<div class="wrapper">
+        	<div id="karta">
+        		<h2 id="mapaNaslov">Ovde se pravi najbolji sladoled na svetu!</h2>
+        	<div id="tacka1" class="tacka">
+            	<div class="tacka-opis">
+                	<p>Perchè No! - Firenca, Italija</p>
+                </div>
+            </div>
+            
+            <div id="tacka2" class="tacka">
+            	<div class="tacka-opis">
+                	<p>Vaffelbageriet - Kopenhagen, Danska </p>
+                </div>
+            </div>
+            
+            <div id="tacka3" class="tacka">
+            	<div class="tacka-opis">
+                	<p>A’jia Hotel - Istanbul, Turska</p>
+                </div>
+            </div>
+            
+            <div id="tacka4" class="tacka">
+            	<div class="tacka-opis">
+                	<p>Ice Cream City - Tokijo, Japan </p>
+                </div>
+            </div>
+            
+            <div id="tacka5" class="tacka">
+            	<div class="tacka-opis">
+                	<p>Bombay Ice Creamery - San Francisko, SAD</p>
+                </div>
+            </div>
+            
+            <div id="tacka6" class="tacka">
+            	<div class="tacka-opis">
+                	<p> Devon House - Kingston, Jamajka</p>
+                </div>
+            </div><div id="mobilVisibilty" >
+           <header>
+            	<h2 >Ovde se pravi najbolji sladoled na svetu!</h2>
+</header>
+            <ol>
+            	<li> Firenca, Italija - Perchè No!</li>
+                <li> Kopenhagen, Danska - Vaffelbageriet</li>
+                <li> Istanbul, Turska - A’jia Hotel</li>
+                <li> Tokijo, Japan - Ice Cream City</li>
+                <li> San Francisko, SAD - Bombay Ice Creamery </li>
+                  <li> Kingston, Jamajka - Devon House </li>
+          </ol>  
+          </div><!-- end #mobilVisibilty-->     
+            </div><!--end #karta-->
+        </div>  <!--end .wrapper--> 
+    </section><!--end #mapa-->
+ 
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>

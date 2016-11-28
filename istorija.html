@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sladoled</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><!-- ucitan CDN JQuery(zato nije radio hamburger meni! -->
+<script src="lib/jquery.cntl.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="lib/cntl.css">
+
+<script>
+$(document).ready(function(e){
+
+$('.cntl').cntl({
+
+// The amount of "scroll padding" to allow 
+// The more, the later the state will be revealed
+revealbefore: 300,
+
+// The animate class
+// This class should have animation rules in css
+anim_class: 'cntl-animate',
+
+// A callback once the state has been revealed
+onreveal: null
+
+});
+
+});
+
+</script>
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+
+
+</head>
+
+<body>
+<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                    	<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                    	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                     
+                     <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-lg fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+
+      <section id="istorijaTimelime">
+    	<div class="wrapper">
+        <h1 align="center">Slatko - ledeno putovanje kroz vreme :) </h1>
+<div class="cntl"> <span class="cntl-bar cntl-center"> <span class="cntl-bar-fill"></span> </span>
+  <div class="cntl-states">
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Prvi sladoled nastao je u Kini</h4>
+        <p>Na kraljevskim dvorovima pravljena je preteča današnjeg sladoleda, poslastica koja je bila mešavina leda i mleka.</p>
+      </div>
+      <div class="cntl-icon cntl-center">IV BC</div>
+    </div>
+    
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Stari Rimljani</h4>
+        <p>Uživali su u čarima sladoleda. Rimski car Neron je mešao sneg i led donešen sa planina, s voćnim sokovima i usitnjenim voćem i dobijao vodenu mešavinu sličnu sladoledu.</p>
+      </div>
+      <div class="cntl-image"><img src="images/6.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">68.</div>
+    </div>
+      <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Marko Polo preneo sladoled u Evropu </h4>
+        <p> Prema nekim podacima prvi kineski recept za sladoled nastao je još 3000 godina p.n.e, a zahvaljujući pustolovinama venecijanskog istraživača Marka Pola, sladoled je sa dvora Kublaj-kana stigao na Stari kontinent.</p>
+      </div>
+      <div class="cntl-image"><img src="images/8.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1300.</div>
+    </div>
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Katarina Mediči</h4>
+        <p>Sladoled su pravili i na dvoru Katarine Mediči koja ga je ponela sa sobom kada se udala za budućeg francuskog kralja Henry II. Tom prilikom odala je tajnu svome suprugu, koju je on prosledio svojim kuvarima </p>
+      </div>
+      <div class="cntl-image"><img src="images/7.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1533.</div>
+    </div>
+    
+      <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Sladomat :)</h4>
+        <p>Aparat za sladoled izmislila je, takođe, jedna Amerikanka - Nensi Džonson iz Nju Džerzija. Međutim, nije zaštitila patent, pa se njeno ime izostavlja iz zvanične istorije najpopularnijeg ledenog zadovoljstva.
+           </p>
+      </div>
+      <div class="cntl-image"><img src="images/2.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1846.</div>
+    </div>
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Prva fabrika sladoleda </h4>
+        <p>Za komercijalnu upotrebu sladoleda značajne su dve godine: 1851. godina, kada je Džejkob Fasel otvorio prvu fabriku za proizvodnju sladoleda. </p>
+      </div>
+      <div class="cntl-image"><img src="images/3.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1851.</div>
+    </div>
+    
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Prvi kornet </h4>
+        <p>Napravio je poslastičar Italo Marćioni.<br>
+           </p>
+      </div>
+      <div class="cntl-image"><img src="images/4.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1924.</div>
+    </div>
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Sladoled na štapiću</h4>
+        <p>Kris Nelson je realziovao svoju ideju prelivanja sladoleda čokoladom i stavio ledenu poslasticu na štapić.</p>
+      </div>
+      <div class="cntl-image"><img src="images/5.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1934.</div>
+    </div>
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Jul mesec sladoleda</h4>
+        <p>Američki predsednik Ronald Regan mesec jul proglasio je mesecom sladoleda.
+          </p>
+      </div>
+      <div class="cntl-image"><img src="images/10.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">1984.</div>
+    </div>
+    <div class="cntl-state">
+      <div class="cntl-content">
+        <h4>Ukusi su prevazišli granice mašte</h4>
+        <p>Sladoled se meša sa voćem, keksom, prelivima, likerima, jogurtom, ali i povrćem. Najneobičniji ukusi su beli luk, senf, bundeva, pasulj, kiseli krastavci...</p>
+      </div>
+      <div class="cntl-image"><img src="images/1.jpg" alt="sladoled"></div>
+      <div class="cntl-icon cntl-center">Now</div>
+    </div>
+  </div>
+</div>
+
+        	
+        </div>   <!--end .wrapper--> 
+    </section><!-- end #istorijaTimeline-->
+        
+ 
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>

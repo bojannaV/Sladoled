@@ -1,0 +1,928 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	background:url(../images/retina_wood.png);
+	font-size:14px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color:#000000;
+	font-weight:300;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900;
+	margin:1em 0 0.5em;
+	color:#353535;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p {
+	margin:0.3em 0 0.5em;
+}
+
+img {
+	vertical-align:bottom;
+	max-width:100%;
+}
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color:#fff;
+	transition:0.2s all ease;
+	text-align:center;
+}
+a:hover {
+	text-decoration:none;
+	color:#d7767b;
+}
+a:active {
+	color:#353535;
+}
+p .button{
+	color:#fff;
+	}
+	
+.button {
+    border: 1px solid #9cd5ce;
+	background:#9cd5ce;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 17px 33px 15px;
+	margin:20px 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+	border: 1px solid #d7767b;
+	background:#d7767b;
+	color:#fff;
+}
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper {
+	width:1200px;
+	margin:0 auto;
+	}
+	
+#header {
+	background:#fff;
+}
+
+#logo {
+	float:left;
+}
+
+#logo img {
+	height:35px;
+	padding:36px 0 25px;
+}
+#nav {
+	float:right;
+}
+#nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#nav ul li {
+	float:left;
+}
+#nav ul li a {
+	display:block;
+	padding:44px 20px 36px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+#nav ul li a:link,
+#nav ul li a:visited {
+	color:#353535;
+	text-decoration:none;
+	border-bottom:4px solid #fff; 
+	
+}
+#nav ul li a:hover {
+	color:#d7767b;
+	border-bottom:4px solid #d7767b; 
+	background:	rgba(156,213,206,0.20);
+}
+
+#respmenu {
+	display:none;
+	font-size:1.2em;
+	margin-top:40px;
+}
+#hero {
+	background:url(../images/hero.jpg) center center / cover fixed;
+	padding:150px 0;
+	text-align:center;
+}
+
+div#slogan{
+	max-width:100%;
+	margin: 0 0 0 200px;
+
+	}
+#slogan h2{
+	background:rgba(115,115,115,0.6);
+	color:#FFFFFF;
+	border-radius:10px;
+	padding:30px;
+	text-align:right;
+	}
+
+#about {
+	background:#fff;
+	}
+#devojcica{
+	float:left;
+	
+	}
+	
+	/*----------------istorija--------*/
+#history {
+background:url(../images/history_map_bg.jpg);
+text-align:center;
+padding:30px 0 50px 0;
+
+	}
+.istorija{
+	position:relative;
+	
+	}
+#malaR{
+	display:none;
+	}
+#brod{
+	position:absolute;
+	top:75px;
+	left:513px;
+	animation:brod 10s infinite;
+	
+	}
+	
+	@keyframes brod{
+	 0%  { left:513px; top:75px;}
+	 5%  { left:512px; top:76px;}
+	10%  { left:514px; top:76px;}
+    15%  { left:513px; top:75px;}
+    20%  { left:516px; top:75px;}
+	25%  { left:512px; top:76px;}
+    30%  { left:518px; top:77px;}
+	35%  { left:512px; top:76px;}
+	40%  {left:516px; top:76px;}
+	45%  {left:512px; top:76px;}
+    50%  {left:514px; top:77px;}
+	55%  { left:512px; top:76px;}
+	60%  {left:514px; top:75px;}
+	65%  {left:516px; top:76px;}
+	70%  {left:518px; top:77px;}
+	75%  { left:520px; top:75px;}
+	80%  { left:518px; top:74px;}
+	85%  { left:516px; top:76px;}
+	90%  {left:520px; top:77px;}
+	95%  { left:516px; top:76px;}
+	100% {left:513px; top:75px;}
+	}
+		
+#more{
+	position:absolute;
+	top:223px;
+	left:513px;
+	animation:more 4s infinite;
+	}
+	
+	@keyframes more{
+	0%   { left:511px; top:221px;}
+    15%  { left:513px; top:223px;}
+    20%  { left:511px; top:221px;}
+    30%  { left:513px; top:223px;}
+	40%  { left:511px; top:221px;}
+    50%  { left:513px; top:223px;}
+	60%  { left:511px; top:221px;}
+	80%  { left:513px; top:223px;}
+	90%  { left:511px; top:221px;}
+	100% { left:513px; top:223px;}
+		
+	}
+	
+#procitaj{
+	position:absolute;
+	bottom:100px;
+	right:100px;
+	}
+		
+#zanimljivosti{
+	margin-top:20px;
+	float:right;
+	padding-top: 194px;
+	padding-right: 50px;
+	}
+
+#zanimljivosti p{
+	margin-top:20px;
+	font-weight:400;
+	font-size:17px;
+	}
+#jos{
+	margin-top:70px;
+	}
+		
+#products {
+	background:#F2F2F2;
+	padding:50px 0 120px;
+	text-align:center;
+}
+
+#products .product {
+	width:200px;
+	padding:35px 35px 15px;
+	border-radius:10px;
+	margin-top:100px;
+	margin-right:40px;
+	background:#FFF;
+	float:left;
+	position:relative;
+	top:0;
+	overflow:hidden;
+   
+}
+
+#products .product:nth-of-type(4n) {
+	margin-right:0;
+}
+
+.products-text{
+	width:100%;
+	height:100%;
+	text-align:center;
+	background:rgba(255,255,255,0);
+	border-radius:10px;
+	position:absolute;
+	top:100%;
+	left:0;
+	transition:0.4s all ease;
+	opacity:0;
+	
+		}
+		
+.products-text h3{
+	padding-top:60px;
+		}
+		
+.product:hover .products-text{
+	/*top:0;*/
+	bottom:20;
+	background:rgba(255,255,255,0.80);
+	opacity:1;
+		}
+		
+#mapa{
+	background:#fff;
+	}
+			
+#mapa.wrapper{
+	text-align:center;
+	color:#353535;
+		}
+		
+#karta{
+	height:455px;
+	background:url(../images/mapa.jpg) center center no-repeat;
+	position:relative;
+
+		}
+
+.tacka {
+	width:10px;
+	height:10px;
+	border-radius:10px;
+	background:#EC0206;
+	position:absolute;
+}
+		
+#tacka1{
+	top:126px;
+	left:634px;
+	}
+	
+#tacka2{
+	top:90px;
+	left:626px;
+	}
+	
+#tacka3{
+	top:133px;
+	left:683px;
+	}
+	
+#tacka4{
+	top:145px;
+	left:1050px;
+	}
+	
+#tacka5{
+	top:154px;
+	left:206px;
+	}
+	
+#tacka6{
+	top:207px;
+	left:349px;
+	}
+	
+.tacka-opis {
+	width:150px;
+	height:60px;
+	background:rgba(255,255,255,0.8);
+	border-radius:10px;
+	position:absolute;
+	top:100%;
+	left:100%;
+	display:none;
+	z-index:10000;
+}
+.tacka:hover .tacka-opis {
+	display:block;
+	}
+
+.tacka-opis p{
+	padding:5px;
+	}
+		
+#mapaNaslov{
+	padding-top: 360px;
+    text-align: center;
+}
+	
+#mobilVisibilty{
+	display:none;
+	}
+#footer{
+	background:#fff;
+	text-align:center;
+	font-size:12px;
+	margin-top: 20px;
+	}
+	
+#footer p{
+	padding:15px 0 10px 0;
+	}
+	/*---------------------------zanimljivosti.html---------------*/
+	
+#blog {
+	padding-top:30px ;
+	}
+#blog .wrapper {
+	background:#fff;
+	padding:5px 10px 50px 10px;
+	text-align:center;
+	border-radius:10px;
+	}	
+
+#main {
+	width:780px;
+	padding: 20px 40px;
+	float:left;
+}
+#sidebar {
+	width:300px;
+	padding:20px;
+	float:right;
+
+}
+#sidebar a:link,
+#sidebar a:visited{
+	color:#353535;
+	text-transform: uppercase;
+	}
+	
+#sidebar a:hover{
+	color:#C48BC7;
+	text-decoration:underline;
+	}
+	
+#news h1{
+	background:url(../images/retina_wood.png);
+	color:#353535;
+	border-radius:10px;
+	}
+	
+	
+#news p{
+	text-align:left;
+	
+	}	
+#news img{
+	margin-bottom:30px;
+	margin-top:30px;
+	border-radius:10px;
+	}
+#news a{
+	color:#079CA4;
+	}
+
+/*------------------------istorija.html ------------------------*/
+
+#istorijaTimelime .wrapper{
+	background:#fff;
+	border-radius:10px;
+	}
+#istorijaTimelime .wrapper h1{
+	padding-top:10px;
+	margin: 0.7em 0 0.5em;
+
+}
+.cntl-icon .ctnl-center{
+	font-size:36px;
+	}
+/*-----------gdeprobati.html-----*/
+
+
+	
+#bgMesta p{
+	padding:4px;
+	text-align:right;
+			}
+			
+.desno{
+	width:780px;
+	float:right;
+	}
+	
+.levo{
+	width:350px;
+	float:left;
+	}
+.desnoPoravnanje .levo h2{
+	text-align:right;
+	}
+	
+@media screen and (min-width:1024px) and (max-width:1260px) {
+.wrapper {
+	width:960px;
+	}
+
+	
+#main {
+	width:630px;
+	padding:15px;
+	}
+#sidebar {
+	width:270px;
+	padding:15px;
+	}
+	
+#velikaR{
+	display:none;
+		}
+#malaR{
+	display:block;
+		}
+#brod{
+	display:none;
+		}
+#more{
+	display:none;
+	}
+#procitaj{
+	position:absolute;
+	bottom:20px;
+	right:10px;
+	}
+	
+#devojcica{
+	float:left;
+	width:300px;
+	padding-top: 57px;
+	
+	}
+	
+#zanimljivosti {
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#products .product {
+		width:380px;
+		margin-right:60px;
+	}
+#products .product:nth-of-type(4n) {
+		margin-right:60px;
+	}
+#products .product:nth-of-type(2n) {
+		margin-right:0;
+	}
+	
+.product:hover .products-text{
+		top:0;
+		background:rgba(255,255,255,0.80);
+		opacity:1;
+		}
+	
+#karta{
+		background-size:960px 364px;
+		height:364px;
+	}
+	
+#tacka1{
+	top: 100px;
+	left: 507px;
+	}
+	
+#tacka2{
+	top: 68px;
+	left: 501px;
+	}
+	
+#tacka3{
+	top: 106px;
+	left: 547px;
+	}
+	
+#tacka4{
+	top: 115px;
+	left: 839px;
+	}
+	
+#tacka5{
+	top: 121px;
+	left: 164px;
+	}
+	
+#tacka6{
+	top: 162px;
+	left: 277px;
+	}
+	
+#mapaNaslov{
+	padding-top: 223px;
+    text-align: center;
+}
+			
+.desno{
+	width:630px;
+	float:right;
+	}
+	
+.levo{
+	width:270px;
+	float:left;
+	}
+.desnoPoravnanje  .levo h2{
+	text-align:right;
+	}
+#mobilVisibilty{
+	
+	display:none;
+	
+	}
+	
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.wrapper {
+		width:700px;
+	}
+	#logo img {
+	height:24px;
+	padding:36px 0 25px;
+}
+	#main {
+		width:480px;
+		padding:10px;
+	}
+	#sidebar {
+		width:180px;
+		padding:10px;
+	}
+	
+	#velikaR{
+		display:none;
+		}
+	#malaR{
+		display:block;
+		}
+	#brod{
+		display:none;
+		}
+		
+	#devojcica{
+	padding-top:120px;
+	width:300px;
+	
+	}
+	
+	#zanimljivosti {
+	width:300px;
+    margin-top: 20px;
+    padding-top: 50px;
+	font-size:14px;
+	}
+	
+#zanimljivosti p {
+    font-size: 13px;
+}
+#more{
+	display:none;
+	}
+	#procitaj{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	}
+	
+	#zanimljivosti {
+    margin-top: 20px;
+   text-align:center;
+    padding-top: 80px;
+   
+}
+
+	#karta{
+		background-size:700px 265px;
+		height:265px;
+	}
+	
+	#tacka1{
+	top: 72px;
+	left: 369px;
+	}
+	
+#tacka2{
+	top: 48px;
+	left: 365px;
+	}
+	
+	#tacka3{
+	top: 77px;
+	left: 395px;	
+	}
+	
+	#tacka4{
+	top: 82px;
+	left: 609px;
+	}
+	
+	#tacka5{
+	top: 91px;
+	left: 120px;
+	}
+	
+	#tacka6{
+	top: 116px;
+	left: 201px;
+	}
+		
+#mapaNaslov{
+	padding-top: 178px;
+    text-align: center;
+	margin-top: 0;
+}
+
+#bgMesta p{
+	padding:4px;
+	text-align:left;
+			}
+			
+.desno{
+	width:auto;
+	float:none;
+	}
+	
+.levo{
+	width:auto;
+	float:none;
+	}
+.desnoPoravnanje  .levo h2{
+	text-align:center;
+	}
+#mobilVisibilty{
+	
+	display:none;
+	
+	}
+	
+#products .product {
+	width:260px;
+	margin-right:40px;
+	text-align:center;
+	}
+#products .product:nth-of-type(4n) {			
+	margin-right:40px;
+	}
+#products .product:nth-of-type(2n) {	
+    margin-right:0;
+	}
+}
+
+@media screen and (max-width:767px) {
+.wrapper {
+	width:80%;
+	}
+	
+#logo {
+	float:none;
+	text-align:center;
+	}
+#logo img {
+	height:35px;
+	padding:30px 0 15px;
+}
+#respmenu {
+	display:block;
+	}/*h*/
+	
+#nav {
+	float:none;
+	}/*h*/
+#nav ul {
+	display:none;
+	}/*h*/
+	
+#nav ul li {
+	float:none;
+	border-bottom:1px solid #ccc;
+	}/*h*/
+	
+.buttonNav {
+    border: 1px solid #353535;
+	background:rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 17px 33px 15px;
+	margin:20px 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+a:link, a:visited {
+      color: #353535;
+}
+
+.buttonNav:hover {
+	border: 1px solid #d7767b;
+	background:#d7767b;
+	color:#fff;
+}
+
+div#slogan{
+	max-width:100%;
+	margin: 0 0 0;
+	}
+	
+#slogan h2{
+	background:rgba(115,115,115,0.6);
+	color:#FFFFFF;
+	padding:30px;
+	text-align:right;
+	font-size:28px;
+	}
+
+#velikaR{
+	display:none;
+	}
+	
+#malaR{
+	display:block;
+	}
+	
+#brod{
+	display:none;
+		}
+		
+#more{
+	display:none;
+	}
+	
+	
+#devojcica{
+	padding-top:60px;
+	margin:0 auto;
+
+	}
+	
+#zanimljivosti{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 0px;
+	}
+#procitaj{
+	position:relative;
+	bottom:0px;
+	right:0px;
+	}
+
+#main,
+#sidebar {
+	float:none;
+	width:auto;
+	padding:10px;
+	}
+	
+	
+#zanimljivosti {
+   margin-top: 20px;
+   text-align:center;
+   padding-top: 40px;
+}
+	
+	
+#products .product {
+	width:auto;
+	float:none;
+	margin-right:40px;
+	margin-left:40px;
+	}
+#products .product:nth-of-type(4n) {
+	margin-right:40px;
+	margin-left:40px;
+	
+	}
+	
+#hero {
+	background-position:left center;
+}
+
+#tacka1{
+	display:none;
+	}
+	
+#tacka2{
+	display:none;
+	}
+	
+#tacka3{
+	display:none;
+	}
+	
+#tacka4{
+	display:none;
+	}
+	
+#tacka5{
+	display:none;
+	}
+	
+#tacka6{
+	display:none;
+	}
+		
+#mapaNaslov{
+	display:none;
+	}
+#bgMesta p{
+	text-align:left;
+			}
+			
+.desno{
+	width:auto;
+	float:none;
+	}
+	
+.levo{
+	width:auto;
+	float:none;
+	}
+.desnoPoravnanje .levo h2{
+	text-align:center;
+	}
+
+#mobilVisibilty h2{
+	padding-top:10px;
+	text-align:center;
+	display:block;
+	}	
+	
+#mobilVisibilty{
+	padding-top:10px;
+	text-align:left;
+	display:block;
+	}	
+}

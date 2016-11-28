@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sladoled</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><!-- ucitan CDN JQuery(zato nije radio hamburger meni! -->
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+
+</script><!--end hamburger-->
+
+
+
+</head>
+
+<body>
+<header id="header">
+		<div class="wrapper">
+			<div id="logo">
+               <a href="index.html">
+					<img src="images/logo4.png" alt="logo">
+               </a>
+                </div><!--end #logo-->
+              <nav id="nav">
+                	<ul>
+                    	<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Početna</a></li>
+                    	<li><a href="istorija.html">istorija</a></li>
+                    	<li><a href="zanimljivosti.html">zanimljivosti</a></li>
+                    	<li><a href="gdeprobati.html">gde probati</a></li>
+                   
+                    </ul>
+                     
+                     <a href="#" id="respmenu" class="buttonNav"><i class="fa fa-lg fa-bars"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav><!--end #navigacija-->   
+                
+		</div><!--end .wrapper-->
+            	
+     </header><!--end #header-->
+
+ 
+   
+ <div id="blog">    
+   <div class="wrapper">
+     <div id="bgMesta">
+        	
+         <div class="block" id="news">
+        
+        	<h1>Gde je najbolji sladoled u Beogradu?</h1>
+            
+            <article class="article desnoPoravnanje">
+                <img src="images/icePoint.jpg" alt="Ice Point" class="desno">
+                 <div class="levo">
+                <h2>Ice Point</h2>
+                <p>Slatki i osvežavajući sladoled dezert  koji svakodnevno inspiriše na kombinovanje ukusnih sastojaka za jedinstveno uživanje u sladolednoj aromi života.</p>
+     	    </div>
+            </article><!-- end .article -->
+            
+            <article class="article desnoPoravnanje">
+            	
+                <img src="images/moritz.jpg" alt="sladoled" class="desno">
+                
+               <div class="levo">
+               <h2>Moritz Eis</h2>
+                <p >Prirodan, ukusan i ručno napravljen sladoled. Dobijen od organskog voća i povrća od proizvođača iz Srbije. Voćni osvežavajući sladoledi imaju preko 50% voća u bazi. Kada se udruže kvalitet, mašta i iskustvo dobije se upravo ovakav sladoled- savršen.<br><br>
+                Kremasti sladoledi punog ukusa. Jedina je mana što često menjaju ukuse pa je moguće da nećete naći svoj omiljeni. :)</p>
+                </div>
+            </article><!-- end .article -->
+            
+            <article class="article desnoPoravnanje">
+            	
+                <img src="images/Tsladoled.jpg" alt="Crni sladoled" class="desno">
+                 <div class="levo">
+                <h2> Tajlandski sladoled </h2>
+                <p>Ovaj hladni dezert nastaje jedinstvenom tehnikom od 100% svežih sastojaka. Priprema se na ledenoj ploči koja se smrzava do -35°C i uz pomoć veštih majstora oblikuje se u ledene rolnce, a potom nastaje prava magija za sva čula. </p>
+</div>
+            </article><!-- end .article -->
+            
+        </div>
+    
+   	</div><!-- end #bgMesta -->
+    </div><!--wrapper-->
+    </div><!--blog-->
+    
+ 
+ 
+    <footer id="footer">
+	<div class="wrapper">
+    <p>Copyright&copy; Bojana Vlajković 2016.</p>
+    </div>
+</footer>
+</body>
+</html>
