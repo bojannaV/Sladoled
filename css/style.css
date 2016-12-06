@@ -41,7 +41,7 @@ a:visited {
 }
 a:hover {
 	text-decoration:none;
-	color:#d7767b;
+	color:/*#d7767b*/#009abb;
 }
 a:active {
 	color:#353535;
@@ -66,8 +66,8 @@ p .button{
 }
 
 .button:hover {
-	border: 1px solid #d7767b;
-	background:#d7767b;
+	border: 1px solid #009abb;
+	background:#009abb;
 	color:#fff;
 }
 
@@ -122,8 +122,8 @@ p .button{
 	
 }
 #nav ul li a:hover {
-	color:#d7767b;
-	border-bottom:4px solid #d7767b; 
+	color:/*#d7767b*/#009abb;
+	border-bottom:4px solid /*#d7767b*/#009abb; 
 	background:	rgba(156,213,206,0.20);
 }
 
@@ -133,8 +133,8 @@ p .button{
 	margin-top:40px;
 }
 #hero {
-	background:url(../images/hero.jpg) center center / cover fixed;
-	padding:150px 0;
+	background:url(../images/s3.jpg) center center / cover fixed;
+	padding:200px 0;
 	text-align:center;
 }
 
@@ -258,6 +258,7 @@ padding:30px 0 50px 0;
 	width:200px;
 	padding:35px 35px 15px;
 	border-radius:10px;
+	box-shadow: 0px 2px 0px #009abb;
 	margin-top:100px;
 	margin-right:40px;
 	background:#FFF;
@@ -267,7 +268,10 @@ padding:30px 0 50px 0;
 	overflow:hidden;
    
 }
-
+#products .product h4{
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+}
 #products .product:nth-of-type(4n) {
 	margin-right:0;
 }
@@ -409,25 +413,53 @@ padding:30px 0 50px 0;
 	width:300px;
 	padding:20px;
 	float:right;
-
 }
 #sidebar a:link,
 #sidebar a:visited{
 	color:#353535;
 	text-transform: uppercase;
+	/*border:1px solid #eee;
+	padding: 10px 0;
+	margin: 50px 0;*/
+	width:75%;
+	/*border: 1px solid #9cd5ce;
+	background:#9cd5ce;*/
+	//border: 1px solid #fff;
+	background:#fcfcfc; /* url(../images/retina_wood.png);*/
+	//box-shadow: 1px 2px 5px #eee;
+	box-shadow: 0px 2px 0px #009abb;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 20px 30px 15px;
+	margin:10px 0;
+    text-transform: uppercase;
 	}
 	
 #sidebar a:hover{
-	color:#C48BC7;
+	color:/*#C48BC7*/#009abb;
 	text-decoration:underline;
 	}
+#sidebar h2{
+	padding: 10px;
+}
 	
 #news h1{
-	background:url(../images/retina_wood.png);
+	//border-bottom:2px solid #eee;
 	color:#353535;
-	border-radius:10px;
+	//border-radius:10px;
 	}
-	
+#news .article{
+	background: #fcfcfc;
+	//border:1px solid #eee;
+	border-radius: 10px;
+	box-shadow: 0px 2px 0px #009abb;
+	padding: 10px;
+	margin-bottom: 10px;
+}	
 	
 #news p{
 	text-align:left;
@@ -458,8 +490,14 @@ padding:30px 0 50px 0;
 	}
 /*-----------gdeprobati.html-----*/
 
+#bgMesta .article{
+	/*border:none;
+	border-radius: none;
+	box-shadow: none;
+	background: none;
+*/}
 
-	
+
 #bgMesta p{
 	padding:4px;
 	text-align:right;
@@ -477,6 +515,11 @@ padding:30px 0 50px 0;
 .desnoPoravnanje .levo h2{
 	text-align:right;
 	}
+.desnoPoravnanje:after{
+	content:"";
+	display: table;
+	clear: both;
+}
 	
 @media screen and (min-width:1024px) and (max-width:1260px) {
 .wrapper {
@@ -786,22 +829,24 @@ a:link, a:visited {
 }
 
 .buttonNav:hover {
-	border: 1px solid #d7767b;
-	background:#d7767b;
+	border: 1px solid #009abb;
+	background:#009abb;
 	color:#fff;
 }
 
 div#slogan{
-	max-width:100%;
+	max-width:80%;
 	margin: 0 0 0;
+	padding: 0;
 	}
 	
 #slogan h2{
 	background:rgba(115,115,115,0.6);
 	color:#FFFFFF;
-	padding:30px;
+	padding:0px;
 	text-align:right;
 	font-size:28px;
+	width: 80%;
 	}
 
 #velikaR{
